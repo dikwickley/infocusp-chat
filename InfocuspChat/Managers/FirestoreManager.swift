@@ -75,12 +75,24 @@ class FirestoreManager: ObservableObject {
         return nil
     }
     
-    func createPersonalChat(chat: Chat) -> DocumentReference? {
-        let collectionRef = db.collection("chats")
+    func createPersonalChat(chat: Chat) async -> DocumentReference? {
         
+        let collectionRef = db.collection("chats")
+
+        var _chat = chat
+        _chat.id = chat.participants.joined(separator: "-")
+  
         do {
-            let docRef = try collectionRef.addDocument(from: chat)
-            return docRef
+            let documentRef = collectionRef.document(chat.participants.sorted().joined(separator: "_"))
+            
+            let documentSnapshot = try await documentRef.getDocument()
+            
+            if documentSnapshot.exists {
+                return documentRef
+            }
+            
+            try documentRef.setData(from: chat)
+            return documentRef
         } catch {
             print(error)
         }

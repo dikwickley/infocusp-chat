@@ -12,18 +12,22 @@ struct UserView: View{
     @Injected var fm: FirebaseManager
     @State var users: [ICUser] = []
     @State private var selectedUsers = Set<String?>()
+    @State var selectedChatId: String?
+    @State var chatSheet = false
     
     var body: some View {
         NavigationView {
             
             VStack{
                 List(users, selection: $selectedUsers) { user in
-                    VStack(alignment: .leading) {
-                        Text(user.name!)
-                        Text(user.id!)
-                            .font(.caption2)
+                    if fm.authManager.auth.currentUser?.uid != user.id {
+                        VStack(alignment: .leading) {
+                            Text(user.name!)
+                            Text(user.id!)
+                                .font(.caption2)
+                        }
+                        .listRowBackground(Color.clear)
                     }
-                    .listRowBackground(Color.clear)
                 }
                 .listStyle(.plain)
                 .background(.white)
@@ -53,6 +57,13 @@ struct UserView: View{
                     await fetchUsers()
                 }
             }
+            .sheet(isPresented: $chatSheet) {
+                if let selectedChatId = selectedChatId {
+                    ChatView(chatId: selectedChatId)
+                } else {
+                    Text("None")
+                }
+            }
         }
     }
     
@@ -72,7 +83,9 @@ struct UserView: View{
 //            fm.firestoreManager.createGroupChat(chat: newChat)
         } else { // personal chat
             let newChat = Chat(chatType: .personal, participants: users.map { $0! })
-            fm.firestoreManager.createPersonalChat(chat: newChat)
+            let docRef = await fm.firestoreManager.createPersonalChat(chat: newChat)
+            selectedChatId = docRef?.documentID
+            chatSheet.toggle()
         }
         
     }

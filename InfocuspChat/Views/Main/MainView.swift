@@ -30,6 +30,7 @@ struct MainView: View {
     @Injected var fm: FirebaseManager
     @State var currentScreen: Screen = .chats
     @Environment(\.dismiss) var dismiss
+    @State var showChatSheet = false
     
     init() {
         print("MainView init")
