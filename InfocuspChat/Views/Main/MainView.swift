@@ -37,17 +37,21 @@ struct MainView: View {
     }
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
+        
+        VStack {
+            
+            HStack {
                 
-                HStack(spacing: geometry.size.width/10) {
+                Button{
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
                     
-                    Button{
-                        dismiss()
-                    } label: {
-                        Image(systemName: "xmark.circle")
-                        
-                    }
+                }
+                
+                Spacer()
+                
+                HStack(spacing: 30) {
                     
                     Button{
                         currentScreen = .chats
@@ -75,30 +79,31 @@ struct MainView: View {
                         )
                         
                     }
-                    
-                    
                 }
-                .frame(width: geometry.size.width)
-                .font(.title)
-                .padding(.vertical)
-                .foregroundColor(.white)
-                .background(Color(0x438BFB))
-                
-                
-                
-                VStack {
-                    switch currentScreen {
-                    case .chats: ChatSelectView()
-                    case .users: UserView()
-                    case .settings: Settings()
-                    }
-                }
-                
-                Spacer()
                 
             }
+            .frame(maxWidth: .infinity)
+            .font(.title)
+            .padding(.vertical)
+            .padding(.horizontal)
+            .foregroundColor(.white)
+            .background(Color(0x438BFB))
+            
+            
+            
+            VStack {
+                switch currentScreen {
+                case .chats: ChatSelectView()
+                case .users: UserView()
+                case .settings: Settings()
+                }
+            }
+            
+            Spacer()
+            
         }
     }
+    
 }
 
 
