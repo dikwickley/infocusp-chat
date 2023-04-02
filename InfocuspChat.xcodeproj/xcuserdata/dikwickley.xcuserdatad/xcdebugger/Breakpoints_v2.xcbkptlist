@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1C766E18-44BF-4B84-B92E-3FA7D409DD15"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D62E377-4BF6-498D-8247-1A47F1A2B0B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InfocuspChat/Managers/ChatbotManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4D449AF-5114-4AE1-A61B-11338C6E5996"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InfocuspChat/Managers/ChatbotManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E4D449AF-5114-4AE1-A61B-11338C6E5996 - 3dfbb85a5ee97ac2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for InfocuspChat.ChatbotManager.send(text: Swift.String) async -&gt; Swift.String"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Managers/ChatbotManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "E4D449AF-5114-4AE1-A61B-11338C6E5996 - a3960c46a9bcbe35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for InfocuspChat.ChatbotManager.send(text: Swift.String) async -&gt; Swift.String"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Managers/ChatbotManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "E4D449AF-5114-4AE1-A61B-11338C6E5996 - 18b52178ee376399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for InfocuspChat.ChatbotManager.send(text: Swift.String) async -&gt; Swift.String"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Managers/ChatbotManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E4D449AF-5114-4AE1-A61B-11338C6E5996 - 18b52178ee3764c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for InfocuspChat.ChatbotManager.send(text: Swift.String) async -&gt; Swift.String"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Managers/ChatbotManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54C31EFA-3117-49B4-A367-E33082B6634F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InfocuspChat/Views/Main/Chatbot/ChatbotView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "54C31EFA-3117-49B4-A367-E33082B6634F - a554160792b956c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.ForEach&lt;Swift.Array&lt;InfocuspChat.BotMessage&gt;, InfocuspChat.BotMessage, &lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;&gt;, SwiftUI.Spacer, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in InfocuspChat.ChatbotView.body.getter : some"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Views/Main/Chatbot/ChatbotView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "54C31EFA-3117-49B4-A367-E33082B6634F - 7d0cbc38f9e9b6cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.ForEach&lt;Swift.Array&lt;InfocuspChat.BotMessage&gt;, InfocuspChat.BotMessage, &lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;&gt;, SwiftUI.Spacer, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in InfocuspChat.ChatbotView.body.getter : some"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Views/Main/Chatbot/ChatbotView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "54C31EFA-3117-49B4-A367-E33082B6634F - b39be2314d012c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.ForEach&lt;Swift.Array&lt;InfocuspChat.BotMessage&gt;, InfocuspChat.BotMessage, &lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;&gt;, SwiftUI.Spacer, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.textFieldStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.TextFieldStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.buttonStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PrimitiveButtonStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in InfocuspChat.ChatbotView.body.getter : some"
+                  moduleName = "InfocuspChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dikwickley/projects/ios/infocusp-chat/InfocuspChat/Views/Main/Chatbot/ChatbotView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

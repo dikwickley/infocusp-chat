@@ -9,6 +9,7 @@ import SwiftUI
 import Resolver
 
 enum Screen {
+    case bot
     case chats
     case users
     case settings
@@ -28,7 +29,7 @@ extension Color {
 
 struct MainView: View {
     @Injected var fm: FirebaseManager
-    @State var currentScreen: Screen = .chats
+    @State var currentScreen: Screen = .bot
     @Environment(\.dismiss) var dismiss
     @State var showChatSheet = false
     
@@ -52,6 +53,14 @@ struct MainView: View {
                 Spacer()
                 
                 HStack(spacing: 30) {
+                    
+                    Button{
+                        currentScreen = .bot
+                    } label: {
+                        Image(systemName:
+                                currentScreen == .bot ? "cpu.fill" : "cpu"
+                        )
+                    }
                     
                     Button{
                         currentScreen = .chats
@@ -93,6 +102,7 @@ struct MainView: View {
             
             VStack {
                 switch currentScreen {
+                case .bot: ChatbotView()
                 case .chats: ChatSelectView()
                 case .users: UserView()
                 case .settings: Settings()

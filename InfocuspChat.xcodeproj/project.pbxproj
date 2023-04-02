@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7834D30D29D9543D007AE58C /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7834D30C29D9543D007AE58C /* OpenAISwift */; };
+		7834D30F29D955C4007AE58C /* ChatbotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834D30E29D955C4007AE58C /* ChatbotManager.swift */; };
+		7834D31229D958E9007AE58C /* ChatbotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834D31129D958E9007AE58C /* ChatbotView.swift */; };
 		901524D1298156B100C78AE8 /* InfocuspChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901524D0298156B100C78AE8 /* InfocuspChatApp.swift */; };
 		901524D3298156B100C78AE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901524D2298156B100C78AE8 /* ContentView.swift */; };
 		901524D5298156B300C78AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901524D4298156B300C78AE8 /* Assets.xcassets */; };
@@ -38,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7834D30E29D955C4007AE58C /* ChatbotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotManager.swift; sourceTree = "<group>"; };
+		7834D31129D958E9007AE58C /* ChatbotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotView.swift; sourceTree = "<group>"; };
 		901524D0298156B100C78AE8 /* InfocuspChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfocuspChatApp.swift; sourceTree = "<group>"; };
 		901524D2298156B100C78AE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		901524D4298156B300C78AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,12 +80,21 @@
 				CBB4D40529935B360066F038 /* GoogleSignInSwift in Frameworks */,
 				CBB4D400299350EF0066F038 /* Resolver in Frameworks */,
 				CB78D2582983DD4900C8A987 /* FirebaseFirestoreSwift in Frameworks */,
+				7834D30D29D9543D007AE58C /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7834D31029D958DB007AE58C /* Chatbot */ = {
+			isa = PBXGroup;
+			children = (
+				7834D31129D958E9007AE58C /* ChatbotView.swift */,
+			);
+			path = Chatbot;
+			sourceTree = "<group>";
+		};
 		901524C4298156B100C78AE8 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +132,7 @@
 		CB2AB08629927B9600CBF0F9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7834D31029D958DB007AE58C /* Chatbot */,
 				CBDD5F0A299B5FEF006A8CE9 /* Chat */,
 				CBDDE90D299656EB00E60A47 /* Users */,
 				CB2AB08729927BFE00CBF0F9 /* MainView.swift */,
@@ -153,6 +168,7 @@
 				CB78D2592983DDE300C8A987 /* AuthManager.swift */,
 				CBD69BE029928ADE00564D49 /* FirestoreManager.swift */,
 				CB2AB0962992867F00CBF0F9 /* DependencyManager.swift */,
+				7834D30E29D955C4007AE58C /* ChatbotManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -214,6 +230,7 @@
 				CBB4D3FF299350EF0066F038 /* Resolver */,
 				CBB4D40229935B360066F038 /* GoogleSignIn */,
 				CBB4D40429935B360066F038 /* GoogleSignInSwift */,
+				7834D30C29D9543D007AE58C /* OpenAISwift */,
 			);
 			productName = InfocuspChat;
 			productReference = CB2AB0832992793F00CBF0F9 /* InfocuspChat.app */;
@@ -247,6 +264,7 @@
 				CB78D2522983DD4900C8A987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				CBB4D3FE299350EF0066F038 /* XCRemoteSwiftPackageReference "Resolver" */,
 				CBB4D40129935B360066F038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				7834D30B29D9543D007AE58C /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
 			productRefGroup = 901524C4298156B100C78AE8;
 			projectDirPath = "";
@@ -280,8 +298,10 @@
 				CB78D2602983E89C00C8A987 /* Extensions.swift in Sources */,
 				CB2AB08829927BFE00CBF0F9 /* MainView.swift in Sources */,
 				CBDAA55F299F76350080FD1E /* ChatView.swift in Sources */,
+				7834D31229D958E9007AE58C /* ChatbotView.swift in Sources */,
 				901524D3298156B100C78AE8 /* ContentView.swift in Sources */,
 				CB2AB0972992867F00CBF0F9 /* DependencyManager.swift in Sources */,
+				7834D30F29D955C4007AE58C /* ChatbotManager.swift in Sources */,
 				CB2AB08E2992803F00CBF0F9 /* FirebaseManager.swift in Sources */,
 				CB2AB0822992779D00CBF0F9 /* AuthView.swift in Sources */,
 				CBDDE90F299656FA00E60A47 /* UserView.swift in Sources */,
@@ -422,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InfocuspChat/Preview Content\"";
-				DEVELOPMENT_TEAM = YPM3YB6AW9;
+				DEVELOPMENT_TEAM = 4P324MFAWB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InfocuspChat/Info.plist;
@@ -437,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.InfocuspChatIIPL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.InfocuspChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -453,7 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InfocuspChat/Preview Content\"";
-				DEVELOPMENT_TEAM = YPM3YB6AW9;
+				DEVELOPMENT_TEAM = 4P324MFAWB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InfocuspChat/Info.plist;
@@ -468,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.InfocuspChatIIPL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.InfocuspChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -500,6 +520,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7834D30B29D9543D007AE58C /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CB78D2522983DD4900C8A987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -527,6 +555,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7834D30C29D9543D007AE58C /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7834D30B29D9543D007AE58C /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
 		CB78D2532983DD4900C8A987 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CB78D2522983DD4900C8A987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
