@@ -41,7 +41,7 @@ class ChatbotManager: ObservableObject {
         do {
             let result = try await openAI.sendChat(
                 with: [
-                    ChatMessage(role: .system, content: "You are a helpful assistant. You only respond to topics regarding corporate. You deny responding to any other topic."),
+                    ChatMessage(role: .system, content: "You are a assistant that only provides email template. You only give email templates for a given promt. You respond with a 'Sorry, can not create an email template for that. Try again.' for any other type of promt. DO NOT ANSWER ANYTHING ELSE OTHER THAN EMAIL TEMPLATES."),
                     ChatMessage(role: .user, content: text)
                     
                 ],

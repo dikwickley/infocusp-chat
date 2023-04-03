@@ -29,7 +29,7 @@ extension Color {
 
 struct MainView: View {
     @Injected var fm: FirebaseManager
-    @State var currentScreen: Screen = .bot
+    @State var currentScreen: Screen = .chats
     @Environment(\.dismiss) var dismiss
     @State var showChatSheet = false
     
@@ -54,13 +54,7 @@ struct MainView: View {
                 
                 HStack(spacing: 30) {
                     
-                    Button{
-                        currentScreen = .bot
-                    } label: {
-                        Image(systemName:
-                                currentScreen == .bot ? "cpu.fill" : "cpu"
-                        )
-                    }
+                    
                     
                     Button{
                         currentScreen = .chats
@@ -78,6 +72,14 @@ struct MainView: View {
                                 currentScreen == .users ? "person.3.fill" : "person.3"
                         )
                         
+                    }
+                    
+                    Button{
+                        currentScreen = .bot
+                    } label: {
+                        Image(systemName:
+                                currentScreen == .bot ? "cpu.fill" : "cpu"
+                        )
                     }
                     
                     Button{

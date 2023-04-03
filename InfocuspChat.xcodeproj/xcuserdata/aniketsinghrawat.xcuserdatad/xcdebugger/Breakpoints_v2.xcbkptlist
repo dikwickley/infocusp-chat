@@ -14,10 +14,10 @@
             filePath = "InfocuspChat/Views/Main/MainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "MainView"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +30,10 @@
             filePath = "InfocuspChat/Views/Main/MainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -230,7 +230,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7F810499-5E55-4565-B90A-85FF39964829"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InfocuspChat/Managers/ChatManager.swift"
