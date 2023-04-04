@@ -125,6 +125,7 @@ struct Settings: View{
     var body: some View {
         VStack {
             Text("Settings")
+            AvatarView(seed: fm.authManager.auth.currentUser?.uid ?? "none")
             Text("Hello \(fm.authManager.auth.currentUser?.displayName ?? "None" )")
             Button("Logout") {
                 fm.authManager.logout()

@@ -21,10 +21,12 @@ struct UserView: View{
             VStack{
                 List(users, selection: $selectedUsers) { user in
                     if fm.authManager.auth.currentUser?.uid != user.id {
-                        VStack(alignment: .leading) {
+                        HStack {
+                            AvatarView(seed: user.id ?? "none", size: CGSize(width: 50, height: 50))
+                            
                             Text(user.name!)
-                            Text(user.id!)
-                                .font(.caption2)
+//                            Text(user.id!)
+//                                .font(.caption2)
                         }
                         .listRowBackground(Color.clear)
                     }

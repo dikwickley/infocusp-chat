@@ -48,17 +48,26 @@ struct ChatView: View, KeyboardReadable {
     var body: some View {
         VStack {
             if let currentChat = currentChat {
+                
                 HStack {
                     
-                    ForEach(currentChat.users) { user in
-                        if user.id != fm.authManager.auth.currentUser?.uid {
-                            Text(user.name ?? "None")
-                                .font(.title2)
+                    if currentChat.chat.chatType == .personal {
+                        ForEach(currentChat.users) { user in
+                            if user.id != fm.authManager.auth.currentUser?.uid {
+                                
+                                AvatarView(seed: user.id ?? "none", size: CGSize(width: 50, height: 50))
+                                
+                                Text(user.name ?? "None")
+                                    .font(.title2)
+                            }
                         }
                     }
+                    
+                    Spacer()
+                    
                 }
-                Text("\(currentChat.chat.id ?? "None")")
-                    .font(.caption2)
+//                Text("\(currentChat.chat.id ?? "None")")
+//                    .font(.caption2)
                 
                 ScrollView(showsIndicators: false) {
                     ScrollViewReader { value in

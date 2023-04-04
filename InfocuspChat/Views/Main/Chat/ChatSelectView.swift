@@ -59,14 +59,19 @@ struct ChatRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                ForEach(chat.users) { user in
-                    if user.id != fm.authManager.auth.currentUser?.uid {
-                        Text(user.name ?? "None")
+                if chat.chat.chatType == .personal {
+                    
+                    
+                    ForEach(chat.users) { user in
+                        if user.id != fm.authManager.auth.currentUser?.uid {
+                            AvatarView(seed: user.id ?? "none", size: CGSize(width: 50, height: 50))
+                            Text(user.name ?? "None")
+                        }
                     }
                 }
             }
-            Text("\(chat.id)")
-                .font(.caption2)
+//            Text("\(chat.id)")
+//                .font(.caption2)
         }
     }
 }
