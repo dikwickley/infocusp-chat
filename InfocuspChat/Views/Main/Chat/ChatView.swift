@@ -150,20 +150,28 @@ struct MessageRow: View {
 
     
     var body: some View {
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "MMM d, HH:mm"
         
-        
-        HStack {
+        return HStack {
             if sender {
                 Spacer()
             }
-            Text(message.content)
-                .bold()
-                .foregroundColor(.white)
-                .padding(.vertical, 7)
-                .padding(.horizontal)
-                .background(bubbleColor)
-                .cornerRadius(10)
-            
+            VStack(alignment: sender ? .trailing : .leading, spacing: 0) {
+                Text(message.content)
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding(.vertical, 7)
+                    .padding(.horizontal)
+                    .background(bubbleColor)
+                    .cornerRadius(10)
+                
+                Text("\(dateformatter.string(from: message.time))")
+                    .font(.system(size: 10))
+                    .foregroundColor(.gray)
+                    .padding(.top, 5)
+                
+            }
             if !sender {
                 Spacer()
             }

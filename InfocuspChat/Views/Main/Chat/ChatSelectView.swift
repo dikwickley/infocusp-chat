@@ -72,7 +72,6 @@ struct ChatSelectView: View {
             }
             
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                print("hello \(UUID().uuidString)")
                 Task {
                     await fetchChats()
                 }
@@ -97,10 +96,11 @@ struct ChatRow: View {
     var chat: ICChat
     
     var body: some View {
-        VStack(alignment: .leading) {
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "MMM d, h:mm a"
+        return VStack(alignment: .leading) {
             HStack {
                 if chat.chat.chatType == .personal {
-                    
                     
                     ForEach(chat.users) { user in
                         if user.id != fm.authManager.auth.currentUser?.uid {
@@ -108,9 +108,17 @@ struct ChatRow: View {
                             VStack(alignment: .leading) {
                                 Text(user.name ?? "None")
                                 
+                                
                                 if let lastMessage = chat.lastMessage{
-                                    Text("\(lastMessage.content)")
-                                        .font(.caption)
+                                    HStack {
+                                        Text("\(lastMessage.content)")
+                                            
+                                        
+                                        Spacer()
+                                        
+                                        Text("\(dateformatter.string(from: lastMessage.time))")
+                                    }
+                                    .font(.caption)
                                 } else {
                                     Text(" ")
                                         .font(.caption)
