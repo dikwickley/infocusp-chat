@@ -33,7 +33,7 @@ extension KeyboardReadable {
 }
 
 struct ChatView: View, KeyboardReadable {
-    @State var chatId: String
+    var chatId: String
     @State var currentChat: ICChat?
     @State var messageContent: String = ""
     @State var messages: [Message] = []

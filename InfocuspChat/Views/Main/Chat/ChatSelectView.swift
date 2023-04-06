@@ -7,12 +7,17 @@
 
 import SwiftUI
 import Resolver
+import WidgetKit
 
 struct ChatSelectView: View {
     @Injected var fm: FirebaseManager
     @State var chats: [ICChat] = []
+    @State var updater: Bool = false
     @State var chatSheet = false
     @State var selectedChatId: String?
+    @AppStorage("pinned", store: UserDefaults(suiteName: "group.com.infocusp.widget.shared")) var pinned: String = "None"
+    
+    @State var timer: Timer?
     
     var body: some View {
         
@@ -26,6 +31,29 @@ struct ChatSelectView: View {
                         selectedChatId = chat.id
                     }
                     .listRowBackground(Color.clear)
+                    .swipeActions(allowsFullSwipe: false) {
+                        
+                        Button {
+                            pinned = chat.id
+                            WidgetCenter.shared.reloadAllTimelines()
+                        } label: {
+                            if chat.id == pinned {
+                                Image(systemName: "pin.fill")
+                            } else {
+                                Image(systemName: "pin")
+                            }
+                        }
+                        .tint(.indigo)
+                        
+                        
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "trash.fill")
+                        }
+                        .tint(.red)
+
+                    }
                     
             }
             .listStyle(.plain)
@@ -41,6 +69,18 @@ struct ChatSelectView: View {
         .onAppear {
             Task {
                 await fetchChats()
+            }
+            
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                print("hello \(UUID().uuidString)")
+                Task {
+                    await fetchChats()
+                }
+            }
+        }
+        .onDisappear {
+            if let timer {
+                timer.invalidate()
             }
         }
         
@@ -65,13 +105,22 @@ struct ChatRow: View {
                     ForEach(chat.users) { user in
                         if user.id != fm.authManager.auth.currentUser?.uid {
                             AvatarView(seed: user.id ?? "none", size: CGSize(width: 50, height: 50))
-                            Text(user.name ?? "None")
+                            VStack(alignment: .leading) {
+                                Text(user.name ?? "None")
+                                
+                                if let lastMessage = chat.lastMessage{
+                                    Text("\(lastMessage.content)")
+                                        .font(.caption)
+                                } else {
+                                    Text(" ")
+                                        .font(.caption)
+                                }
+                            }
                         }
                     }
                 }
             }
-//            Text("\(chat.id)")
-//                .font(.caption2)
+            
         }
     }
 }

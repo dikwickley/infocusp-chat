@@ -39,38 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8028B8B3-9555-48BE-806B-75B49775C644"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Managers/AuthManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "logout()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "95803A44-4699-43EE-9C2F-8F9D7E399479"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Managers/AuthManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "logout()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "99BE1E29-C6DB-4BDE-B13E-5D7768873050"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -103,132 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "84723868-CA2D-4643-95A6-1B673275BB00"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Views/Main/Users/UserView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "startChat(selectedUsers:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "84723868-CA2D-4643-95A6-1B673275BB00 - a380b933afe5c8e3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for InfocuspChat.UserView.startChat(selectedUsers: Swift.Set&lt;Swift.Optional&lt;Swift.String&gt;&gt;) async -&gt; ()"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Users/UserView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "920">
-               </Location>
-               <Location
-                  uuid = "84723868-CA2D-4643-95A6-1B673275BB00 - 3adfb6626a0e6dd3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for InfocuspChat.UserView.startChat(selectedUsers: Swift.Set&lt;Swift.Optional&lt;Swift.String&gt;&gt;) async -&gt; ()"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Users/UserView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "84723868-CA2D-4643-95A6-1B673275BB00 - 535656c63fee84e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for InfocuspChat.UserView.startChat(selectedUsers: Swift.Set&lt;Swift.Optional&lt;Swift.String&gt;&gt;) async -&gt; ()"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Users/UserView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D1824962-A978-4961-87C1-9473205F4902"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Views/Main/Chat/ChatView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D1824962-A978-4961-87C1-9473205F4902 - 85e8d7af8f6819e9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in InfocuspChat.ChatView.body.getter : some"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Chat/ChatView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "D1824962-A978-4961-87C1-9473205F4902 - ac19d53bb677647"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in InfocuspChat.ChatView.body.getter : some"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Chat/ChatView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "D1824962-A978-4961-87C1-9473205F4902 - 1c5aa518b850d5ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in InfocuspChat.ChatView.body.getter : some"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Views/Main/Chat/ChatView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7F810499-5E55-4565-B90A-85FF39964829"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -245,22 +87,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B70A8B72-C6AA-46B2-A2D1-5DCE838662DB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Managers/FirestoreManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "fetchChatById(chatId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C7410CF1-1ED5-46C1-B45E-3F5FF5ACEA4C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -268,88 +94,10 @@
             filePath = "InfocuspChat/Managers/FirestoreManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "listenMessage(chatId:completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C805E17E-EE21-4A7A-8CC0-DDD50692042A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InfocuspChat/Managers/FirestoreManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "fetchChatById(chatId:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C805E17E-EE21-4A7A-8CC0-DDD50692042A - f9510221e2d6dd2"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for InfocuspChat.FirestoreManager.fetchChatById(chatId: Swift.String) async -&gt; Swift.Optional&lt;InfocuspChat.ICChat&gt;"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Managers/FirestoreManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "296">
-               </Location>
-               <Location
-                  uuid = "C805E17E-EE21-4A7A-8CC0-DDD50692042A - deb595cdf97491d0"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for InfocuspChat.FirestoreManager.fetchChatById(chatId: Swift.String) async -&gt; Swift.Optional&lt;InfocuspChat.ICChat&gt;"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Managers/FirestoreManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "440">
-               </Location>
-               <Location
-                  uuid = "C805E17E-EE21-4A7A-8CC0-DDD50692042A - 91521bff549bd5d6"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for InfocuspChat.FirestoreManager.fetchChatById(chatId: Swift.String) async -&gt; Swift.Optional&lt;InfocuspChat.ICChat&gt;"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Managers/FirestoreManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "C805E17E-EE21-4A7A-8CC0-DDD50692042A - 8c25e90014eb7d5"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for InfocuspChat.FirestoreManager.fetchChatById(chatId: Swift.String) async -&gt; Swift.Optional&lt;InfocuspChat.ICChat&gt;"
-                  moduleName = "InfocuspChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aniketsinghrawat/infocusp/ios/InfocuspChat/InfocuspChat/Managers/FirestoreManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -362,10 +110,26 @@
             filePath = "InfocuspChat/Managers/FirestoreManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "listenMessage(chatId:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CC22A20-9EB2-4EEA-8168-DDF6BF38C19C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InfocuspChat/Views/Main/Chat/ChatSelectView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

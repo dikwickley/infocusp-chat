@@ -22,9 +22,9 @@ struct Chat: Codable, Identifiable { // model for firebase
 
 struct ICChat: Codable, Identifiable {
     var chat: Chat
+    var lastMessage: Message?
     var users: [ICUser]
     var id: String {
         chat.id ?? "none"
     }
-    
 }

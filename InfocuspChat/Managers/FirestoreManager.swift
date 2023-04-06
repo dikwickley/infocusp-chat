@@ -112,9 +112,30 @@ class FirestoreManager: ObservableObject {
         return nil
     }
     
+    func getLastMessageFromChat(chatId: String) async -> Message? {
+        do {
+            let collectionRef = db.collection("messages")
+                .order(by: "time", descending: true)
+                .limit(to: 1)
+                .whereField("chatId", isEqualTo: chatId)
+            
+            let querySnapshot = try await collectionRef.getDocuments()
+            
+            let documents = try querySnapshot.documents.map { doc in
+                return try doc.data(as: Message.self)
+                
+            }
+            
+            return documents.first
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
     func fetchAllUserChats(userId: String) async -> [ICChat] {
         do {
-            let collectionRef = db.collection("chats").whereField("participants", arrayContainsAny: [userId])
+            let collectionRef = db.collection("chats").order(by: "lastUpdated", descending: true).whereField("participants", arrayContainsAny: [userId])
             
             let querySnapshot = try await collectionRef.getDocuments()
             let chats = try querySnapshot.documents.map { document in
@@ -125,7 +146,8 @@ class FirestoreManager: ObservableObject {
             
             for chat in chats {
                 let users = await getUserByIds(ids: chat.participants)
-                icChats.append(ICChat(chat: chat, users: users))
+                let lastMessage = await getLastMessageFromChat(chatId: chat.id ?? "none")
+                icChats.append(ICChat(chat: chat, lastMessage: lastMessage, users: users))
             }
             
             return icChats
@@ -158,6 +180,10 @@ class FirestoreManager: ObservableObject {
         
         do {
             let docRef = try collectionRef.addDocument(from: message)
+            
+            let chatDocRef = db.collection("chats").document(message.chatId)
+            chatDocRef.setData(["lastUpdated" : Date()], merge: true)
+            
             return docRef
         } catch {
             print(error)

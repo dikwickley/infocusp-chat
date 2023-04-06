@@ -39,7 +39,40 @@
 		CBDDE90A29964AC700E60A47 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE90929964AC700E60A47 /* Message.swift */; };
 		CBDDE90C29964C5200E60A47 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE90B29964C5200E60A47 /* Chat.swift */; };
 		CBDDE90F299656FA00E60A47 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDE90E299656FA00E60A47 /* UserView.swift */; };
+		CBFAB3F029DEA7850060FF6F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFAB3EF29DEA7850060FF6F /* WidgetKit.framework */; };
+		CBFAB3F229DEA7850060FF6F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFAB3F129DEA7850060FF6F /* SwiftUI.framework */; };
+		CBFAB3F529DEA7850060FF6F /* InfocuspChatWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB3F429DEA7850060FF6F /* InfocuspChatWidgetBundle.swift */; };
+		CBFAB3F729DEA7850060FF6F /* InfocuspChatWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB3F629DEA7850060FF6F /* InfocuspChatWidget.swift */; };
+		CBFAB3FA29DEA7860060FF6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFAB3F929DEA7860060FF6F /* Assets.xcassets */; };
+		CBFAB3FC29DEA7860060FF6F /* InfocuspChatWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB3F829DEA7850060FF6F /* InfocuspChatWidget.intentdefinition */; };
+		CBFAB3FD29DEA7860060FF6F /* InfocuspChatWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB3F829DEA7850060FF6F /* InfocuspChatWidget.intentdefinition */; };
+		CBFAB40029DEA7860060FF6F /* InfocuspChatWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CBFAB3ED29DEA7850060FF6F /* InfocuspChatWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBFAB40B29DECC030060FF6F /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB40A29DECC030060FF6F /* Timer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBFAB3FE29DEA7860060FF6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901524C5298156B100C78AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFAB3EC29DEA7850060FF6F;
+			remoteInfo = InfocuspChatWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBFAB40129DEA7860060FF6F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBFAB40029DEA7860060FF6F /* InfocuspChatWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7834D30E29D955C4007AE58C /* ChatbotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotManager.swift; sourceTree = "<group>"; };
@@ -69,6 +102,17 @@
 		CBDDE90929964AC700E60A47 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CBDDE90B29964C5200E60A47 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		CBDDE90E299656FA00E60A47 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		CBFAB3ED29DEA7850060FF6F /* InfocuspChatWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InfocuspChatWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFAB3EF29DEA7850060FF6F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CBFAB3F129DEA7850060FF6F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CBFAB3F429DEA7850060FF6F /* InfocuspChatWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfocuspChatWidgetBundle.swift; sourceTree = "<group>"; };
+		CBFAB3F629DEA7850060FF6F /* InfocuspChatWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfocuspChatWidget.swift; sourceTree = "<group>"; };
+		CBFAB3F829DEA7850060FF6F /* InfocuspChatWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = InfocuspChatWidget.intentdefinition; sourceTree = "<group>"; };
+		CBFAB3F929DEA7860060FF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBFAB3FB29DEA7860060FF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFAB40529DEAAB20060FF6F /* InfocuspChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InfocuspChat.entitlements; sourceTree = "<group>"; };
+		CBFAB40629DEAAC30060FF6F /* InfocuspChatWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InfocuspChatWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CBFAB40A29DECC030060FF6F /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +130,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBFAB3EA29DEA7850060FF6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFAB3F229DEA7850060FF6F /* SwiftUI.framework in Frameworks */,
+				CBFAB3F029DEA7850060FF6F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,14 +153,20 @@
 		901524C4298156B100C78AE8 = {
 			isa = PBXGroup;
 			children = (
+				CBFAB40629DEAAC30060FF6F /* InfocuspChatWidgetExtension.entitlements */,
 				CB2AB0832992793F00CBF0F9 /* InfocuspChat.app */,
 				901524CF298156B100C78AE8 /* InfocuspChat */,
+				CBFAB3ED29DEA7850060FF6F /* InfocuspChatWidgetExtension.appex */,
+				CBFAB3F329DEA7850060FF6F /* InfocuspChatWidget */,
+				CBFAB3EE29DEA7850060FF6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		901524CF298156B100C78AE8 /* InfocuspChat */ = {
 			isa = PBXGroup;
 			children = (
+				CBFAB40529DEAAB20060FF6F /* InfocuspChat.entitlements */,
+				CBFAB40929DECBF70060FF6F /* Utils */,
 				CBD9DB7B29DC3F1D00890963 /* Components */,
 				CB78D24F2983DC6F00C8A987 /* Managers */,
 				CB78D24E2983DC6600C8A987 /* Models */,
@@ -210,6 +269,35 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
+		CBFAB3EE29DEA7850060FF6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAB3EF29DEA7850060FF6F /* WidgetKit.framework */,
+				CBFAB3F129DEA7850060FF6F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBFAB3F329DEA7850060FF6F /* InfocuspChatWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAB3F429DEA7850060FF6F /* InfocuspChatWidgetBundle.swift */,
+				CBFAB3F629DEA7850060FF6F /* InfocuspChatWidget.swift */,
+				CBFAB3F829DEA7850060FF6F /* InfocuspChatWidget.intentdefinition */,
+				CBFAB3F929DEA7860060FF6F /* Assets.xcassets */,
+				CBFAB3FB29DEA7860060FF6F /* Info.plist */,
+			);
+			path = InfocuspChatWidget;
+			sourceTree = "<group>";
+		};
+		CBFAB40929DECBF70060FF6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAB40A29DECC030060FF6F /* Timer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,10 +308,12 @@
 				901524C9298156B100C78AE8 /* Sources */,
 				901524CA298156B100C78AE8 /* Frameworks */,
 				901524CB298156B100C78AE8 /* Resources */,
+				CBFAB40129DEA7860060FF6F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBFAB3FF29DEA7860060FF6F /* PBXTargetDependency */,
 			);
 			name = InfocuspChat;
 			packageProductDependencies = (
@@ -239,6 +329,23 @@
 			productReference = CB2AB0832992793F00CBF0F9 /* InfocuspChat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CBFAB3EC29DEA7850060FF6F /* InfocuspChatWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFAB40429DEA7860060FF6F /* Build configuration list for PBXNativeTarget "InfocuspChatWidgetExtension" */;
+			buildPhases = (
+				CBFAB3E929DEA7850060FF6F /* Sources */,
+				CBFAB3EA29DEA7850060FF6F /* Frameworks */,
+				CBFAB3EB29DEA7850060FF6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfocuspChatWidgetExtension;
+			productName = InfocuspChatWidgetExtension;
+			productReference = CBFAB3ED29DEA7850060FF6F /* InfocuspChatWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +357,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					901524CC298156B100C78AE8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CBFAB3EC29DEA7850060FF6F = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -274,6 +384,7 @@
 			projectRoot = "";
 			targets = (
 				901524CC298156B100C78AE8 /* InfocuspChat */,
+				CBFAB3EC29DEA7850060FF6F /* InfocuspChatWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +397,14 @@
 				901524D8298156B300C78AE8 /* Preview Assets.xcassets in Resources */,
 				CB78D2512983DCC700C8A987 /* GoogleService-Info.plist in Resources */,
 				901524D5298156B300C78AE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFAB3EB29DEA7850060FF6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFAB3FA29DEA7860060FF6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,17 +430,37 @@
 				CB78D25A2983DDE300C8A987 /* AuthManager.swift in Sources */,
 				CB2AB08529927B8300CBF0F9 /* MainChat.swift in Sources */,
 				CB78D25E2983E65A00C8A987 /* LoginView.swift in Sources */,
+				CBFAB40B29DECC030060FF6F /* Timer.swift in Sources */,
 				CBD9DB7D29DC3F2F00890963 /* AvatarView.swift in Sources */,
 				CBDD5F0C299B5FFD006A8CE9 /* ChatSelectView.swift in Sources */,
 				CBDAA561299F780F0080FD1E /* ChatManager.swift in Sources */,
 				CB2AB08C29927EEE00CBF0F9 /* ICUser.swift in Sources */,
+				CBFAB3FD29DEA7860060FF6F /* InfocuspChatWidget.intentdefinition in Sources */,
 				901524D1298156B100C78AE8 /* InfocuspChatApp.swift in Sources */,
 				CBDDE90C29964C5200E60A47 /* Chat.swift in Sources */,
 				CBDDE90A29964AC700E60A47 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBFAB3E929DEA7850060FF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFAB3F729DEA7850060FF6F /* InfocuspChatWidget.swift in Sources */,
+				CBFAB3FC29DEA7860060FF6F /* InfocuspChatWidget.intentdefinition in Sources */,
+				CBFAB3F529DEA7850060FF6F /* InfocuspChatWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBFAB3FF29DEA7860060FF6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFAB3EC29DEA7850060FF6F /* InfocuspChatWidgetExtension */;
+			targetProxy = CBFAB3FE29DEA7860060FF6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		901524D9298156B300C78AE8 /* Debug */ = {
@@ -441,8 +580,10 @@
 		901524DC298156B300C78AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InfocuspChat/InfocuspChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InfocuspChat/Preview Content\"";
@@ -472,8 +613,10 @@
 		901524DD298156B300C78AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InfocuspChat/InfocuspChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InfocuspChat/Preview Content\"";
@@ -500,6 +643,62 @@
 			};
 			name = Release;
 		};
+		CBFAB40229DEA7860060FF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = InfocuspChatWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB325V53S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfocuspChatWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InfocuspChatWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.infocuspchataniket.InfocuspChatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBFAB40329DEA7860060FF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = InfocuspChatWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB325V53S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InfocuspChatWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InfocuspChatWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infocusp.infocuspchataniket.InfocuspChatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +716,15 @@
 			buildConfigurations = (
 				901524DC298156B300C78AE8 /* Debug */,
 				901524DD298156B300C78AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFAB40429DEA7860060FF6F /* Build configuration list for PBXNativeTarget "InfocuspChatWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFAB40229DEA7860060FF6F /* Debug */,
+				CBFAB40329DEA7860060FF6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
